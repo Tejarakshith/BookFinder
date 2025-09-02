@@ -50,7 +50,7 @@ export default function App() {
     <div className="app">
       <header className="header">
         <h1>📚 Book Finder</h1>
-        <p>Search millions of books using the Open Library API</p>
+        <p>Search millions of books And ENJOY READING</p>
       </header>
 
       {/* Search Bar */}

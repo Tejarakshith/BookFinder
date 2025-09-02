@@ -1,12 +1,65 @@
-# React + Vite
+BookFinder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BookFinder is a web application that allows users to search for books online. It fetches book data from external APIs and displays results in an organized manner, providing a smooth and interactive user experience.
+--------------------------------------------------------------------------------------------------------------------
+FEATURES
 
-Currently, two official plugins are available:
+Search Books: Search for books by title, author, or ISBN.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Responsive UI: Works well on both desktop and mobile devices.
 
-## Expanding the ESLint configuration
+Dynamic Display: View results in grid or list format.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Book Details: See book title, author, cover image, and description.
+
+Interactive Search: Real-time search suggestions while typing.
+--------------------------------------------------------------------------------------------------------------------
+
+TECHONOLOGIES USED
+
+Frontend: HTML, CSS, JavaScript, React.js (with Vite)
+
+API: Open Library API 
+
+Hosting: CodeSandbox / Local deployment
+--------------------------------------------------------------------------------------------------------------------
+USAGE
+
+1. Enter a keyword (book title, author, or ISBN) in the    search bar.
+
+2. Click the Search button.
+
+3. View results in Grid or List view using the toggle buttons.
+
+4. Click on  "View Details" for more details of a paticular book you liked.
+--------------------------------------------------------------------------------------------------------------------
+
+PROJECT STRUCTURE 
+
+book-finder/
+  ├─ src/
+  │  ├─ components/
+  │  │  ├─ SearchBar.jsx
+  │  │  ├─ BookCard.jsx
+  │  │  ├─ BookGrid.jsx
+  │  │  └─ Pagination.jsx
+  │  ├─ hooks/
+  │  │  └─ useBooks.js
+  │  ├─ lib/
+  │  │  └─ api.js
+  │  ├─ styles/
+  │  │  └─ app.css
+  │  ├─ App.jsx
+  │  └─ main.jsx
+  ├─ index.html
+  └─ package.json
+  └──README.md
+
+Explanation:
+
+src/components/ → Reusable UI components like search bar, book card.
+
+src/hooks/ → Components that represent different routes.
+
+App.jsx & main.jsx → Main React app structure and entry point.
+
