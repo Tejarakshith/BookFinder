@@ -37,6 +37,14 @@ USAGE
 
 4. Click on  "View Details" for more details of a paticular book you liked.
 
+SCREENSHORTS OUTPUT 
+--------------------------------------------------------------------------------------------------------------------
+<img width="1920" height="1080" alt="Screenshot 2025-09-02 231526" src="https://github.com/user-attachments/assets/6331eb80-514d-444c-881e-9782a47baa37" />
+
+<img width="1920" height="1080" alt="Screenshot 2025-09-02 231601" src="https://github.com/user-attachments/assets/6af5625d-bacd-49d0-908d-732620056816" />
+
+<img width="1920" height="1080" alt="Screenshot 2025-09-02 231612" src="https://github.com/user-attachments/assets/9361ae69-3591-4681-93ff-be6f04e7ea02" />
+
 
 PROJECT STRUCTURE 
 --------------------------------------------------------------------------------------------------------------------
