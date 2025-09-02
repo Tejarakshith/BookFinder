@@ -12,15 +12,20 @@ export default function App() {
   // new: track current view
   const [view, setView] = useState("grid"); // "grid" or "list"
 
+  // new: track if user clicked Search
+  const [hasSearched, setHasSearched] = useState(false);
+
   const fetchBooks = async () => {
     if (!query.trim()) {
       setResults([]);
+      setHasSearched(true);
       return;
     }
 
     try {
       setLoading(true);
       setError(null);
+      setHasSearched(true);
 
       const url = `https://openlibrary.org/search.json?title=${encodeURIComponent(
         query
@@ -78,7 +83,7 @@ export default function App() {
       {error && <p className="status error">❌ {error}</p>}
 
       <main>
-        {!loading && !error && results.length === 0 && query && (
+        {!loading && !error && results.length === 0 && hasSearched && (
           <p className="status">No results found.</p>
         )}
 
